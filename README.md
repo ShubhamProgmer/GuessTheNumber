@@ -6,7 +6,7 @@ git clone https://github.com/ShubhamProgmer/GuessTheNumber
 
 After cloning just go for it using python! What? asking for password? (if you know python then You must be smart enough to get the password from code, but even then) 
 Password is: 1212
-
+\n
 rules must have reached on your screen till now, just follow and ......
 ENJOY!
 
