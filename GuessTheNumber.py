@@ -1,4 +1,5 @@
 import getpass
+import time
 
 print("Welcome to \"GUESS THE NUMBER\" game:")
 print("Made by ShubhamProgmer, https://github.com/ShubhamProgmer")
@@ -12,12 +13,12 @@ if a == "1212":
 		input1 = getpass.getpass(prompt="Player 1 is requested to enter the number: ")
 		while 1:
 			if not input1.isnumeric():
-				print("You should to provide a NUMBER")
+				print("You have to provide a NUMBER")
 				input1 = getpass.getpass(prompt="Player 1 is requested to enter the number: ")
 				continue
 
 			elif int(input1)<0 or int(input1)>100:
-				print("You should to provide a number between 0 to 100")
+				print("You have to provide a number between 0 to 100")
 				input1 = getpass.getpass(prompt="Player 1 is requested to enter the number: ")
 				continue
 			else:
@@ -32,7 +33,7 @@ if a == "1212":
 		input3 = input("Enter your guess: ")
 		if input3 == "1001":
 			print()
-			print("Cheatcode activated")
+			print("Cheatcode activated - Get the chosen number")
 			print(input1)
 		elif input3 == "1212":
 			print()
@@ -82,23 +83,24 @@ if a == "1212":
 								input3 = input("Enter your guess: ")
 								continue
 			else:
-				print("You should to provide a NUMBER")
+				print("You have to provide a NUMBER")
 				input3 = input("Enter your guess: ")
 				continue
 
 			break
-		lalchi = input("Do you want to play again? (y/n) ")
+		lalchi = input("Do you want to play it again? (y/n) ")
 		while lalchi != "y" and lalchi != "n":
-			lalchi = input("Do you want to play again? (y/n) ")
+			print("Enter a valid option please")
+			lalchi = input("Do you want to play it again? (y/n) ")
 		if lalchi == "y":
 			continue
 		else:
-			print("Thank you for playing!")
-			byebye = input("Enter \'e\' to exit: ")
-			while byebye != "e":
-				byebye = input("Enter \'e\' to exit: ")
-			if byebye == "e":
-				exit()
+			print()
+			print("Thank you for playing!\nExiting....")
+			time.sleep(3)
+			exit()
 else:
-	exit("Kindly ask for password!")
+	print("Kindly ask for password!")
+	time.sleep(2)
+	exit()
 
