@@ -17,6 +17,7 @@ ENJOY!
 
 
 Hey you, reading this till now? Aaw you are lucky! there are two cheats which can be used in FIRST attemp by guessing team:
+
 Get the choosen number - 1001 and
 Get + 10 guesses more - 1212
 
